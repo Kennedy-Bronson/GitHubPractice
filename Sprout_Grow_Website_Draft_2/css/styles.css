@@ -91,10 +91,14 @@ nav li {
 }
 
 
-a {
+nav a {
     color: white;
     padding: 10px;
     display: inline;
+}
+
+section a {
+    color: black
 }
 
 ****
@@ -104,21 +108,35 @@ div a img{
 }
 ****
 
-/*footer {
-    background-color: rgb(28, 28, 28)
-}
-*/
-
 footer div p{
-    color: #fff;
+    color: white;
     text-align: left;
     padding: 10px;
+    font-size: small;
+    margin-bottom: 10px;
+
+}
+
+footer {
+    background-color: rgb(28, 28, 28)
+}
+
+footer p{
+    color: white
+
 }
 
 footer li {
-    display: inline;
     text-align: left;
-    color: #fff;
+    color: white;
+    display: inline;
+
+}
+
+footer a {
+    color: white;
+    padding: 10px;
+    display: inline;
 
 }
 
@@ -129,6 +147,34 @@ footer li {
 .column {
     flex: 33.33%;
     padding: 5px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    text-align: center;
+    padding: 15px;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.catalog h2 {
+    margin: auto auto;
+}
+
+.img {
+    width: 100%;
+    max-height: auto;
+    border-radius: 6px;
 }
 
 /* Media Queries*/
