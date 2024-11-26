@@ -20,7 +20,7 @@ namespace ServiceDeskSimulation
                         break;
                     case 2: 
                         // Exit the program
-                        Console.WriteLine("Program will now exit.");
+                        Console.WriteLine("Program will exit.");
                         exitProgram = true; // Exit prompt
                         break;
                 }
@@ -35,7 +35,7 @@ namespace ServiceDeskSimulation
 
             while (!validInput)
             {
-                Console.WriteLine("-- Welcome to the Service Desk Simulator --");
+                Console.WriteLine("--- Welcome to the Service Desk Simulator ---");
                 Console.WriteLine("Choose from one of the following options:");
                 Console.WriteLine("\t1. Process 100 Service Desk Requests");
                 Console.WriteLine("\t2. Exit");
