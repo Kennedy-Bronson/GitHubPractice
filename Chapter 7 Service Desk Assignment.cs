@@ -1,4 +1,4 @@
-﻿
+
 
 namespace ServiceDeskSimulation
 {
@@ -74,13 +74,13 @@ namespace ServiceDeskSimulation
             switch (priorityNumber) // randomizes priority
             {
                 case 1:
-                    return "High";
+                    return "high";
                 case 2:
-                    return "Medium";
+                    return "medium";
                 case 3:
-                    return "Low";
+                    return "low";
                 default:
-                    return "Low"; // Default case (should not happen)
+                    return "low"; // Default case (should not happen)
             }
         }
 
@@ -101,10 +101,10 @@ namespace ServiceDeskSimulation
             Random rand = new Random(); 
 
             // Populate the arrays with random data
-            for (int i = 0; i < numberOfRequests; i++)
+            for (int i = 0; i < numberOfRequests; i++) 
             {
-                priorities[i] = generatePriority(rand);
-                serviceTimes[i] = generateServiceTime(rand);
+                priorities[i] = generatePriority(rand); // Fill the array with random priorities
+                serviceTimes[i] = generateServiceTime(rand); // Fill the array with random service times
             }
 
             // Display the service desk statistics
@@ -136,15 +136,15 @@ namespace ServiceDeskSimulation
             {
                 switch (priorities[i])
                 { // Each case tells which specific parts need to be counted for each priority level
-                    case "High":
+                    case "high":
                         highCount++;
                         highTotalTime += serviceTimes[i];
                         break;
-                    case "Medium":
+                    case "medium":
                         mediumCount++;
                         mediumTotalTime += serviceTimes[i];
                         break;
-                    case "Low":
+                    case "low":
                         lowCount++;
                         lowTotalTime += serviceTimes[i];
                         break;
